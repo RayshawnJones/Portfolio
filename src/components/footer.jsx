@@ -1,14 +1,14 @@
 import React, { useRef } from "react";
-import emailjs from "emailjs-com"; // Import the emailjs library
-import { validEmail } from "./miscellaneous/regex"; // Import a regular expression for email validation
-import Button from "./miscellaneous/button"; // Import a custom Button component
-import rings from "../assets/images/pattern-rings.svg"; // Import an image
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"; // Import the FontAwesomeIcon component
-import { faCheck } from "@fortawesome/free-solid-svg-icons"; // Import the faCheck icon from FontAwesome
-import { useState } from "react"; // Import the useState hook
+import emailjs from "@emailjs/browser";
+import { validEmail } from "./miscellaneous/regex";
+import Button from "./miscellaneous/button";
+import rings from "../assets/images/pattern-rings.svg";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faCheck } from "@fortawesome/free-solid-svg-icons";
+import { useState } from "react";
 
 export default function Footer({ devData }) {
-  const socialMedia = devData.basics; // Get the social media data from the devData prop
+  const socialMedia = devData.basics;
   return (
     <footer className="footer py-5" id="contactForm">
       <section className="container">
@@ -29,7 +29,7 @@ export default function Footer({ devData }) {
             </div>
           </div>
           <div className="col col-lg-5">
-            <ContactForm /> // Render the ContactForm component
+            <ContactForm />
           </div>
         </div>
 
@@ -59,47 +59,47 @@ export default function Footer({ devData }) {
 }
 
 function ContactForm() {
-  const [name, setName] = useState(""); // Create a state variable for the name input field
-  const [email, setEmail] = useState(""); // Create a state variable for the email input field
-  const [emailErr, setEmailErr] = useState(false); // Create a state variable to track if the email format is invalid
-  const [message, setMessage] = useState(""); // Create a state variable for the message input field
-  const [submitSuc, setSubmitSuc] = useState(false); // Create a state variable to track if the form submission was successful
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [emailErr, setEmailErr] = useState(false);
+  const [message, setMessage] = useState("");
+  const [submitSuc, setSubmitSuc] = useState(false);
 
-  const form = useRef(); // Create a ref for the form element
+  const form = useRef();
 
   const sendEmail = (e) => {
-    e.preventDefault(); // Prevent the default form submission behavior
+    e.preventDefault();
 
     if (!name || !email || !message) {
-      return; // If any of the required fields are empty, do nothing
+      return;
     }
     if (!validEmail.test(email)) {
-      setEmailErr(true); // If the email format is invalid, set the emailErr state variable to true
+      setEmailErr(true);
       return;
     }
 
     emailjs
       .sendForm(
-        "YOUR_SERVICE_ID",
-        "YOUR_TEMPLATE_ID",
+        "service_7hpyixo",
+        "template_m5jv27d",
         form.current,
-        "YOUR_USER_ID"
-      ) // Send the form data using the emailjs library
+        "cvUymwIjUhxtPjW9K"
+      )
       .then(
         (result) => {
-          console.log(result.text); // Log the success message
+          console.log(result.text);
         },
         (error) => {
-          console.log(error.text); // Log the error message
+          console.log(error.text);
         }
       );
 
-    setSubmitSuc(true); // Set the submitSuc state variable to true to show the success message
-    setName(""); // Clear the name input field
-    setEmail(""); // Clear the email input field
-    setMessage(""); // Clear the message input field
+    setSubmitSuc(true);
+    setName("");
+    setEmail("");
+    setMessage("");
     setTimeout(() => {
-      setSubmitSuc(false); // After 3 seconds, set the submitSuc state variable back to false to hide the success message
+      setSubmitSuc(false);
     }, 3000);
   };
 
@@ -116,7 +116,7 @@ function ContactForm() {
             type="text"
             className="input-style"
             value={name}
-            onChange={(e) => setName(e.target.value)} // Update the name state variable when the input value changes
+            onChange={(e) => setName(e.target.value)}
           />
         </div>
 
@@ -130,7 +130,7 @@ function ContactForm() {
             id="email"
             className="input-style"
             value={email}
-            onChange={(e) => setEmail(e.target.value)} // Update the email state variable when the input value changes
+            onChange={(e) => setEmail(e.target.value)}
           />
           {emailErr && (
             <p className="error-message text-end mt-1">
@@ -150,16 +150,16 @@ function ContactForm() {
             className="input-style"
             rows={4}
             value={message}
-            onChange={(e) => setMessage(e.target.value)} // Update the message state variable when the input value changes
+            onChange={(e) => setMessage(e.target.value)}
           />
         </div>
       </div>
       <div className="text-end">
         {!submitSuc ? (
-          <Button>SEND MESSAGE</Button> // Render the "SEND MESSAGE" button if the form has not been successfully submitted
+          <Button>SEND MESSAGE</Button>
         ) : (
           <Button classes="button brand-color">
-            MESSAGE SENT <FontAwesomeIcon icon={faCheck} /> // Render the success message if the form has been successfully submitted
+            MESSAGE SENT <FontAwesomeIcon icon={faCheck} />
           </Button>
         )}
       </div>
