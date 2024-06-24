@@ -1,0 +1,29 @@
+@import "./colors";
+
+.brand-color {
+  color: $brand-color;
+}
+
+.list-style {
+  list-style: none;
+}
+
+.img-bg {
+  background: linear-gradient(180deg, rgba(36, 36, 36, 0) 0%, #242424 100%);
+}
+
+a {
+  text-decoration: none;
+}
+
+@media only screen and (min-width: 550px) {
+  .mobileRings {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 549px) {
+  .desktopRings {
+    display: none;
+  }
+}

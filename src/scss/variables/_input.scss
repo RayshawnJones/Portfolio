@@ -1,0 +1,17 @@
+.label-style {
+  opacity: 0.5;
+}
+
+.input-style {
+  color: $font-color;
+  border: none;
+  background-color: transparent;
+  border-bottom: 1px solid $font-color;
+  opacity: 0.5;
+}
+
+.input-style:focus {
+  outline: none !important;
+  border-bottom: 1px solid $brand-color;
+  opacity: 1;
+}

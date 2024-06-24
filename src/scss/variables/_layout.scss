@@ -1,0 +1,32 @@
+@media only screen and (min-width: 550px) {
+  .gap-desktop {
+    gap: 100px;
+  }
+
+  .img-layout {
+    object-fit: cover;
+    width: 444.876px;
+    height: 618px;
+    flex-shrink: 0;
+  }
+
+  .icon-layout {
+    width: 70px;
+  }
+}
+
+@media only screen and (max-width: 549px) {
+  .gap-mobile {
+    gap: 80px;
+  }
+  .img-layout {
+    object-fit: cover;
+    width: 174.207px;
+    height: 242px;
+    flex-shrink: 0;
+  }
+
+  .icon-layout {
+    width: 70px;
+  }
+}
