@@ -39,7 +39,7 @@ export default function Footer({ devData }) {
         <div className="row py-lg-2 gap-4 justify-content-center align-items-center">
           <div className="col-6 col-lg text-center text-lg-start">
             <h3 className="heading-dev">
-              elias<span className="brand-color">.</span>ekornås
+              Rayshawn<span className="brand-color">.</span>Jones
             </h3>
           </div>
           <div className="col-6 col-lg">
