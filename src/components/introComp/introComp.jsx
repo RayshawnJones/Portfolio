@@ -24,7 +24,6 @@ function DevImage({ dev }) {
         alt={rings}
         className="position-absolute end-50 z-1 mobileRings"
       />
-
       <div className="img-bg z-2">
         <img
           src={dev.image}
@@ -32,7 +31,6 @@ function DevImage({ dev }) {
           className="img-layout img-fluid z-3"
         />
       </div>
-
       <img
         src={circle}
         alt={circle}
@@ -71,10 +69,7 @@ function Description({ dev }) {
         <p>{dev.summary}</p>
       </div>
       <div className="col d-flex flex-column gap-4 align-items-center align-items-lg-start">
-        
-        <Button onClick={() => handleDownload(cv)}>
-          DOWNLOAD CV - ENG
-        </Button>
+        <Button onClick={() => handleDownload(cv)}>DOWNLOAD CV - ENG</Button>
         <Anchor link="#contactForm">CONTACT ME</Anchor>
       </div>
     </div>

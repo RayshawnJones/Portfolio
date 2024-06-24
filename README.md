@@ -130,7 +130,7 @@ View code
 
 Contact
 
-I would love to hear about your project and how I could help. Please
+I would love to hear about your project, ideas, and how I could help. Please
 fill in the form, and I’ll get back to you as soon as possible.
 
 Name
@@ -143,19 +143,25 @@ Message
 
 - Semantic HTML5 markup
 - CSS custom properties
+- [Sass-lang] (https://sass-lang.com/documentation/)- Sass Documentation 
 - Flexbox
 - CSS Grid
-- Bootstrap 5
+- [Bootstrap 5] (https://getbootstrap.com/docs/5.0/getting-started/introduction/) - Bootstrap 5 introduction 
 - Mobile-first workflow
 - [React](https://reactjs.org/) - JS library
 - [Next.js](https://nextjs.org/) - React framework
-- [Styled Components](https://styled-components.com/) - For styles
+- [Styled Components](https://fonts.google.com/specimen/Space+Grotesk) - For styles
 
 ## What I learned
-Will update as continue development of portfolio
+Perseverance as life kept having some unexpected circumstances, asking for help when really needing it, reading documentation to debug package.jsons regarding new languages such as bootstrap and sass. 
+
 ## Continued Development 
 
 Hook the form up so it sends and stores the user's enquiry by can using a spreadsheet or Airtable to save the enquiries. As well as send message functionality to populate in g-mail account. 
+
+Adding in developing websites and updating pre-existing apps created in bootcamp to showcase skill set. 
+
+Updating TODOs within code for checkpoints and on going development 
 
 
 ## Useful resources
