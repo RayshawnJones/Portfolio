@@ -16,6 +16,7 @@ import git from "../../assets/icons/git.svg";
 import figma from "../../assets/icons/figma.svg";
 import js from "../../assets/icons/js.svg";
 import github from "../../assets/icons/github.svg";
+import react from "../../assets/icons/reactjs.svg";
 
 
 
