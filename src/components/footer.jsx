@@ -17,7 +17,7 @@ export default function Footer({ devData }) {
             <div className="text-center text-lg-start d-flex flex-column gap-4 position-relative">
               <h2 className="heading-xl">Contact</h2>
               <p>
-                Currently open for full time role, networking, and shadowing mentor opportunities. Freelance availability is dependent on potentially filling or creating a project new project whether it is open or private that I could
+                Currently open for full-time role, networking, and shadowing mentor opportunities. Freelance availability is dependent on potentially filling or creating a project new project whether it is open or private that I could
                 help with. Please don't hesitate to contact me and I will respond back as soon as I am
                 possible.
               </p>
